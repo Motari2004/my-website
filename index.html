@@ -1,0 +1,10 @@
+import subprocess
+import os
+
+repo_path = "C:/Users/PC/Desktop/refusal-map/gitrepos/my-website"
+os.chdir(repo_path)
+subprocess.run(["git", "init"])
+subprocess.run(["git", "add", "index.html"])
+subprocess.run(["git", "commit", "-m", "Initial commit"])
+subprocess.run(["git", "remote", "add", "origin", "https://github.com/Motari2004/my-website.git"])
+subprocess.run(["git", "push", "-u", "origin", "main"])
